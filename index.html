@@ -1,0 +1,55 @@
+<!doctype html>
+
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico?v=2">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+<!-- CSS Stylesheets -->
+
+<link rel="stylesheet" href="css/main.css">
+
+<title>Covid</title>
+
+</head>
+
+<body>
+
+<h1 class='heading'>COVID REPORT </h1>
+
+<div class="description">
+
+  <p class="subheading">
+    <form id="query-form">
+      <div>
+        <label for="ingredients">Country &nbsp;</label><input class="textfield" id="ingredients" type="text" name="ingredients" placeholder="Country name" onChange="sanitizeInputs()" />
+      </div>
+      
+      <div class="button">
+        <br />
+        <input class="button" type="button" value="Reset" id="resetButton" onClick="this.form.reset();resetResults()" />
+        <input class="button" type="submit" value="Search " id="searchButton" />
+      </div>
+    </form>
+  </p>
+
+<div class="subheading" id="search-results-heading"></div>
+<div class="results-div" id="results"></div>
+
+</body>
+
+
+
+<!-- JQuery Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="js/main.js?v=1"></script>
+
+</html>
